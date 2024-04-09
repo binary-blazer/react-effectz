@@ -1,0 +1,53 @@
+{
+  "name": "react-effectz",
+  "version": "1.0.0",
+  "description": "💭 react effects npm package including some effects in form as components",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "copy-css": "cpx \"src/**/*.css\" dist",
+    "watch-css": "cpx \"src/**/*.css\" dist --watch",
+    "build": "tsc && npm run copy-css",
+    "format:check": "prettier --check .",
+    "format": "prettier --write .",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "prepublishOnly": "pnpm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/binary-blazer/react-effectz.git"
+  },
+  "homepage": "https://github.com/binary-blazer/react-effectz#readme",
+  "bugs": {
+    "url": "https://github.com/binary-blazer/react-effectz/issues"
+  },
+  "keywords": [
+    "effectz",
+    "react",
+    "nextjs",
+    "glitch-text",
+    "library",
+    "effects"
+  ],
+  "author": {
+    "name": "Jonas Franke <@binary-blazer>",
+    "email": "jonasfranke@sdevs.org"
+  },
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "@eslint/js": "^9.0.0",
+    "@types/node": "^20.12.6",
+    "@types/react": "^18.2.75",
+    "cpx": "^1.5.0",
+    "eslint": "^9.0.0",
+    "globals": "^15.0.0",
+    "prettier": "^3.2.5",
+    "typescript": "^5.4.4",
+    "typescript-eslint": "^7.6.0"
+  },
+  "dependencies": {
+    "react": "^18.2.0"
+  }
+}
