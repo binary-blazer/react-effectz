@@ -14,26 +14,26 @@ bun install react-effectz
 
 ## 📚 Usage
 ```jsx
-import { GlitchEffect } from 'react-effectz';
+import { GlitchText } from 'react-effectz';
 
 const App = () => {
   return (
-    <GlitchEffect text="Hello, World!" className="text-xl" playOnLoop={true} />
+    <GlitchText text="Hello, World!" className="text-xl" playOnLoop={true} />
   );
 };
 ```
 
 ## 📖 Documentation
-- [GlitchEffect](#glitcheffect)
+- [GlitchText](#glitchtext)
 > Rest will be available soon
 
-### GlitchEffect
+### GlitchText
 ```jsx
-import { GlitchEffect } from 'react-effectz';
+import { GlitchText } from 'react-effectz';
 
 const App = () => {
   return (
-    <GlitchEffect text="Hello, World!" className="text-xl" playOnLoop={true} />
+    <GlitchText text="Hello, World!" className="text-xl" playOnLoop={true} />
   );
 };
 ```
