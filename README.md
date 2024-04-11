@@ -1,5 +1,7 @@
 ![react-effectz](https://raw.githubusercontent.com/binary-blazer/repo-svgs/main/out/react-effectz/image.svg)
 
+![react-effectz](https://raw.githubusercontent.com/binary-blazer/repo-svgs/main/out/react-effectz/image.svg)
+
 # react-effectz
 > 💭 react effects npm package including some effects in form as components
 
