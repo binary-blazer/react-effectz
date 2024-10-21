@@ -45,9 +45,12 @@ var __rest = (this && this.__rest) || function (s, e) {
         }
     return t;
 };
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 var React = __importStar(require("react"));
-require("./style.css");
+var style_module_css_1 = __importDefault(require("./style.module.css"));
 var GlitchText = function (_a) {
     var text = _a.text, className = _a.className, playOnLoop = _a.playOnLoop, props = __rest(_a, ["text", "className", "playOnLoop"]);
     var words = text.split(" ");
@@ -72,16 +75,16 @@ var GlitchText = function (_a) {
         }, 100);
         return function () { return clearInterval(interval); };
     }, [text, playOnLoop]);
-    return (React.createElement("div", { className: "body" },
-        React.createElement("div", { className: "page" },
-            React.createElement("p", __assign({ className: "reveal--2 words chars splitting " + className, "aria-hidden": "true", "data-scroll": "in", "data-splitting": "", style: {
+    return (React.createElement("div", { className: style_module_css_1.default.body },
+        React.createElement("div", { className: style_module_css_1.default.page },
+            React.createElement("p", __assign({ className: "reveal--2 words chars splitting ".concat(className), "aria-hidden": "true", "data-scroll": "in", "data-splitting": "", style: {
                     "--word-total": words.length,
                     "--char-total": charTotal,
                 } }, props), glitchText.split(" ").map(function (word, wordIndex) { return (React.createElement(React.Fragment, { key: wordIndex },
-                React.createElement("span", { className: "word", "data-word": word, style: { "--word-index": wordIndex } }, word.split("").map(function (char, charIndex) { return (React.createElement("span", { className: "char", "data-char": char, style: {
+                React.createElement("span", { className: style_module_css_1.default.word, "data-word": word, style: { "--word-index": wordIndex } }, word.split("").map(function (char, charIndex) { return (React.createElement("span", { className: style_module_css_1.default.char, "data-char": char, style: {
                         "--char-index": charIndex,
                         "--count": "1",
                     }, key: charIndex }, char)); })),
-                React.createElement("span", { className: "whitespace" }, " "))); })))));
+                React.createElement("span", { className: style_module_css_1.default.whitespace }, " "))); })))));
 };
 exports.default = GlitchText;

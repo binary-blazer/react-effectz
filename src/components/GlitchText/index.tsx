@@ -1,7 +1,7 @@
 "use client";
 
 import * as React from "react";
-import "./style.css";
+import styles from "./style.module.css";
 
 const GlitchText = ({
   text,
@@ -44,10 +44,10 @@ const GlitchText = ({
   }, [text, playOnLoop]);
 
   return (
-    <div className="body">
-      <div className="page">
+    <div className={styles.body}>
+      <div className={styles.page}>
         <p
-          className={"reveal--2 words chars splitting " + className}
+          className={`reveal--2 words chars splitting ${className}`}
           aria-hidden="true"
           data-scroll="in"
           data-splitting=""
@@ -62,13 +62,13 @@ const GlitchText = ({
           {glitchText.split(" ").map((word, wordIndex) => (
             <React.Fragment key={wordIndex}>
               <span
-                className="word"
+                className={styles.word}
                 data-word={word}
                 style={{ "--word-index": wordIndex } as React.CSSProperties}
               >
                 {word.split("").map((char, charIndex) => (
                   <span
-                    className="char"
+                    className={styles.char}
                     data-char={char}
                     style={
                       {
@@ -82,7 +82,7 @@ const GlitchText = ({
                   </span>
                 ))}
               </span>
-              <span className="whitespace"> </span>
+              <span className={styles.whitespace}> </span>
             </React.Fragment>
           ))}
         </p>
