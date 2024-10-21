@@ -1,4 +1,4 @@
-* {
+:global(*) {
   box-sizing: border-box;
   transition: color 0.25s ease;
 }
@@ -8,7 +8,7 @@
   --count: 1;
 }
 
-[data-theme="light"] {
+:global([data-theme="light"]) {
   --color: #000;
 }
 
@@ -19,7 +19,7 @@
   font-weight: bold;
 }
 
-p[data-scroll="in"] [data-char]:after {
+:global(p[data-scroll="in"] [data-char]:after) {
   animation-name: glitch-switch;
 }
 
