@@ -1,9 +1,12 @@
 {
   "name": "react-effectz",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "💭 react effects npm package including some effects in form as components",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "engines": {
+    "node": ">=18.0.0"
+  },
   "scripts": {
     "build": "tsc",
     "format:check": "prettier --check .",
