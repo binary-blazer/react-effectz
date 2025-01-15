@@ -6,11 +6,13 @@ const GlitchText = ({
   text,
   className,
   playOnLoop,
+  style,
   ...props
 }: {
   text: string;
-  className: string;
+  className?: string;
   playOnLoop: boolean;
+  style?: React.CSSProperties;
 }) => {
   const words = text.split(" ");
   const charTotal = text.replace(/\s/g, "").length;
@@ -43,7 +45,7 @@ const GlitchText = ({
   }, [text, playOnLoop]);
 
   return (
-    <div className="body">
+    <div className="body" style={style}>
       <style>{`
         * {
           box-sizing: border-box;
@@ -51,12 +53,8 @@ const GlitchText = ({
         }
 
         :root {
-          --color: #fff;
+          --color: inherit;
           --count: 1;
-        }
-
-        [data-theme="light"] {
-          --color: #000;
         }
 
         .body {
@@ -77,13 +75,13 @@ const GlitchText = ({
         .word {
           position: relative;
           display: inline-block;
-          color: var(--color);
+          color: inherit;
         }
 
         [data-char] {
           color: transparent;
           position: relative;
-          color: var(--color);
+          color: inherit;
         }
 
         [data-char]:after {
@@ -93,7 +91,7 @@ const GlitchText = ({
           animation-timing-function: steps(1);
           animation-fill-mode: backwards;
           content: var(--txt);
-          color: var(--color);
+          color: inherit;
           position: absolute;
           left: 0;
           top: 0;
@@ -145,6 +143,7 @@ const GlitchText = ({
             {
               "--word-total": words.length,
               "--char-total": charTotal,
+              ...style,
             } as React.CSSProperties
           }
           {...props}
