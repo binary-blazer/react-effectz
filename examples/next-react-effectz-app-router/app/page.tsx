@@ -24,7 +24,11 @@ export default function Home() {
             draggable={false}
             priority
           />
-          <GlitchText text="+ react-effectz" className="text-2xl sm:text-3xl mb-6" playOnLoop={false} />
+          <GlitchText
+            text="+ react-effectz"
+            className="text-2xl sm:text-3xl mb-6"
+            playOnLoop={false}
+          />
         </div>
         <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)] -mt-4">
           <p className="mb-4">Run the development server of this example:</p>
@@ -72,24 +76,24 @@ export default function Home() {
                   />
                 </svg>
               </button>
-                <div className="absolute top-full mt-2 w-full bg-white py-2.5 dark:bg-[#1a1a1a] rounded-xl shadow-lg divide-y divide-black/[.08] dark:divide-white/[.145] border border-solid border-black/[.08] dark:border-white/[.145] z-10">
-                  <a
-                    className="block px-4 py-2 text-sm text-black dark:text-white hover:bg-[#f2f2f2] dark:hover:bg-[#383838]"
-                    href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Read next.js docs
-                  </a>
-                  <a
-                    className="block px-4 py-2 text-sm text-black dark:text-white hover:bg-[#f2f2f2] dark:hover:bg-[#383838]"
-                    href="https://github.com/binary-blazer/react-effectz"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Visit react-effectz
-                  </a>
-                </div>
+              <div className="absolute top-full mt-2 w-full bg-white py-2.5 dark:bg-[#1a1a1a] rounded-xl shadow-lg divide-y divide-black/[.08] dark:divide-white/[.145] border border-solid border-black/[.08] dark:border-white/[.145] z-10">
+                <a
+                  className="block px-4 py-2 text-sm text-black dark:text-white hover:bg-[#f2f2f2] dark:hover:bg-[#383838]"
+                  href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Read next.js docs
+                </a>
+                <a
+                  className="block px-4 py-2 text-sm text-black dark:text-white hover:bg-[#f2f2f2] dark:hover:bg-[#383838]"
+                  href="https://github.com/binary-blazer/react-effectz"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Visit react-effectz
+                </a>
+              </div>
             </div>
           </div>
         </div>
