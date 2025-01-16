@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import Image from "next/image";
-import { GlitchText } from "react-effectz";
+import { GlitchText, FadeInText, BounceText } from "react-effectz";
 
 export default function Home() {
   const [dropdownOpen, setDropdownOpen] = useState(false);
@@ -30,6 +30,16 @@ export default function Home() {
             playOnLoop={false}
           />
         </div>
+        <FadeInText
+          text="Welcome to React!"
+          className="text-xl"
+          playOnLoop={true}
+        />
+        <BounceText
+          text="Let's bounce!"
+          className="text-xl"
+          playOnLoop={true}
+        />
         <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)] -mt-4">
           <p className="mb-4">Run the development server of this example:</p>
           <code className="text-xs sm:text-sm bg-[#f2f2f2] dark:bg-[#1a1a1a] rounded-md p-2 sm:p-3">
