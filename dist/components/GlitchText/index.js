@@ -82,3 +82,4 @@ var GlitchText = function (_a) {
                 React.createElement("span", { className: "whitespace" }, " "))); })))));
 };
 exports.default = GlitchText;
+//# sourceMappingURL=index.js.map
